@@ -6,7 +6,7 @@ job('First-Maven-Project-Via-DSL'){
 	triggers{
 		scm('* * * * *')
 	}
-	step{
+	steps{
 		maven('clean package', 'single-module/pom.xml')
 	}
 	publishers{
